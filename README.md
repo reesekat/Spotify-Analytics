@@ -57,7 +57,7 @@ The raw dataset was normalized into a proper relational schema:
 - **dim_artist** — 29,859 unique artists
 - **bridge_track_artist** — many-to-many relationship between tracks and artists (158,293 rows)
 
-### ⚠️ Data Quality Note
+### Data Quality Note
 `track_id` is **not unique** at the row level in `fact_tracks`: 114,000 rows map
 to only ~89,741 distinct `track_id` values. This is inherited from the source
 dataset — the same physical track appears once per genre it is tagged with
